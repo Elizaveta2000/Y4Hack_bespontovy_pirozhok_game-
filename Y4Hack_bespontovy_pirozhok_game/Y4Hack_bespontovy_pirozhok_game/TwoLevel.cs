@@ -16,5 +16,92 @@ namespace Y4Hack_bespontovy_pirozhok_game
         {
             InitializeComponent();
         }
+
+        private void TwoLevel_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            bool create = false;
+
+            foreach (Form form in Application.OpenForms)
+            {
+                if (form.Name.ToString() == "Game_form")
+                {
+                    this.Hide();
+                    form.Visible = true;
+                    create = true;
+                    break;
+                }
+            }
+
+            if (create == false)
+            {
+                GameMenu_form gameG = new GameMenu_form();
+                this.Hide();
+                gameG.Show();
+
+            }
+        }
+
+        private void clickyes_Click(object sender, EventArgs e)
+        {
+            string four = "4";
+            if (score_carrot.Text == four)
+            {
+                forward.Visible = true;
+
+                clickyes.BackColor = Color.FromArgb(0, 0, 0, 0);
+
+            }
+            else
+            {
+                clickyes.BackColor = Color.FromArgb(225, 0, 0);
+                label4.Visible = true;
+
+            }
+        }
+
+        private void carrot1_Click(object sender, EventArgs e)
+        {
+            int i = Convert.ToInt32(score_carrot.Text);
+            i++;
+            score_carrot.Text = i.ToString();
+            carrot1.Visible = carrot1.Text != "";
+        }
+
+        private void carrot2_Click(object sender, EventArgs e)
+        {
+            int i = Convert.ToInt32(score_carrot.Text);
+            i++;
+            score_carrot.Text = i.ToString();
+            carrot2.Visible = carrot2.Text != "";
+        }
+
+        private void carrot3_Click(object sender, EventArgs e)
+        {
+            int i = Convert.ToInt32(score_carrot.Text);
+            i++;
+            score_carrot.Text = i.ToString();
+            carrot3.Visible = carrot3.Text != "";
+        }
+
+        private void carrot5_Click(object sender, EventArgs e)
+        {
+            int i = Convert.ToInt32(score_carrot.Text);
+            i++;
+            score_carrot.Text = i.ToString();
+            carrot5.Visible = carrot5.Text != "";
+        }
+
+        private void carrot4_Click(object sender, EventArgs e)
+        {
+            int i = Convert.ToInt32(score_carrot.Text);
+            i++;
+            score_carrot.Text = i.ToString();
+            carrot4.Visible = carrot4.Text != "";
+        }
     }
 }

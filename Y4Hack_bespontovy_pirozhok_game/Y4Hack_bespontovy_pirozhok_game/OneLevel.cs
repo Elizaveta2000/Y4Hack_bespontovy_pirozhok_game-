@@ -62,7 +62,26 @@ namespace Y4Hack_bespontovy_pirozhok_game
 
         private void forward_Click(object sender, EventArgs e)
         {
+            bool create = false;
 
+            foreach (Form form in Application.OpenForms)
+            {
+                if (form.Name.ToString() == "twoLevel_form")
+                {
+                    this.Hide();
+                    form.Visible = true;
+                    create = true;
+                    break;
+                }
+            }
+
+            if (create == false)
+            {
+                TwoLevel gameT = new TwoLevel();
+                this.Hide();
+                gameT.Show();
+
+            }
         }
 
         private void label1_Click_1(object sender, EventArgs e)
