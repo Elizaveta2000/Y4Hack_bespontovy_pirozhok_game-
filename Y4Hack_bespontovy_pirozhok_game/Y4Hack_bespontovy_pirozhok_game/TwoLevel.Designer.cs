@@ -41,6 +41,9 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.forward = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.carrot5 = new System.Windows.Forms.Label();
+            this.carrot6 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.fail = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // exit
@@ -92,7 +95,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.carrot4.BackColor = System.Drawing.Color.Transparent;
             this.carrot4.ForeColor = System.Drawing.SystemColors.ControlText;
             this.carrot4.Image = ((System.Drawing.Image)(resources.GetObject("carrot4.Image")));
-            this.carrot4.Location = new System.Drawing.Point(564, 276);
+            this.carrot4.Location = new System.Drawing.Point(516, 276);
             this.carrot4.Name = "carrot4";
             this.carrot4.Size = new System.Drawing.Size(80, 121);
             this.carrot4.TabIndex = 29;
@@ -103,7 +106,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             // 
             this.carrot3.BackColor = System.Drawing.Color.Transparent;
             this.carrot3.Image = ((System.Drawing.Image)(resources.GetObject("carrot3.Image")));
-            this.carrot3.Location = new System.Drawing.Point(306, 303);
+            this.carrot3.Location = new System.Drawing.Point(255, 276);
             this.carrot3.Name = "carrot3";
             this.carrot3.Size = new System.Drawing.Size(80, 121);
             this.carrot3.TabIndex = 28;
@@ -114,7 +117,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             // 
             this.carrot2.BackColor = System.Drawing.Color.Transparent;
             this.carrot2.Image = ((System.Drawing.Image)(resources.GetObject("carrot2.Image")));
-            this.carrot2.Location = new System.Drawing.Point(203, 403);
+            this.carrot2.Location = new System.Drawing.Point(170, 394);
             this.carrot2.Name = "carrot2";
             this.carrot2.Size = new System.Drawing.Size(79, 112);
             this.carrot2.TabIndex = 27;
@@ -125,7 +128,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             // 
             this.carrot1.BackColor = System.Drawing.Color.Transparent;
             this.carrot1.Image = ((System.Drawing.Image)(resources.GetObject("carrot1.Image")));
-            this.carrot1.Location = new System.Drawing.Point(50, 356);
+            this.carrot1.Location = new System.Drawing.Point(28, 323);
             this.carrot1.Name = "carrot1";
             this.carrot1.Size = new System.Drawing.Size(80, 121);
             this.carrot1.TabIndex = 26;
@@ -155,19 +158,57 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.label4.TabIndex = 32;
             this.label4.Text = "Давай \r\nпосчитаем!";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label4.Visible = false;
             // 
             // carrot5
             // 
             this.carrot5.BackColor = System.Drawing.Color.Transparent;
             this.carrot5.ForeColor = System.Drawing.SystemColors.ControlText;
             this.carrot5.Image = ((System.Drawing.Image)(resources.GetObject("carrot5.Image")));
-            this.carrot5.Location = new System.Drawing.Point(423, 385);
+            this.carrot5.Location = new System.Drawing.Point(385, 353);
             this.carrot5.Name = "carrot5";
             this.carrot5.Size = new System.Drawing.Size(80, 121);
             this.carrot5.TabIndex = 33;
             this.carrot5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.carrot5.Click += new System.EventHandler(this.carrot5_Click);
+            // 
+            // carrot6
+            // 
+            this.carrot6.BackColor = System.Drawing.Color.Transparent;
+            this.carrot6.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.carrot6.Image = ((System.Drawing.Image)(resources.GetObject("carrot6.Image")));
+            this.carrot6.Location = new System.Drawing.Point(498, 425);
+            this.carrot6.Name = "carrot6";
+            this.carrot6.Size = new System.Drawing.Size(80, 121);
+            this.carrot6.TabIndex = 34;
+            this.carrot6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.carrot6.Click += new System.EventHandler(this.carrot6_Click);
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Showcard Gothic", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label1.Location = new System.Drawing.Point(255, 39);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(235, 83);
+            this.label1.TabIndex = 35;
+            this.label1.Text = "2+1";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // fail
+            // 
+            this.fail.BackColor = System.Drawing.Color.Transparent;
+            this.fail.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.fail.ForeColor = System.Drawing.Color.Maroon;
+            this.fail.Image = ((System.Drawing.Image)(resources.GetObject("fail.Image")));
+            this.fail.Location = new System.Drawing.Point(71, 39);
+            this.fail.Name = "fail";
+            this.fail.Size = new System.Drawing.Size(190, 118);
+            this.fail.TabIndex = 36;
+            this.fail.Text = "Попробуй \r\nеще раз :)";
+            this.fail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.fail.Visible = false;
             // 
             // TwoLevel
             // 
@@ -175,6 +216,9 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(684, 661);
+            this.Controls.Add(this.fail);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.carrot6);
             this.Controls.Add(this.carrot5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.forward);
@@ -206,5 +250,8 @@ namespace Y4Hack_bespontovy_pirozhok_game
         private System.Windows.Forms.Label forward;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label carrot5;
+        private System.Windows.Forms.Label carrot6;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label fail;
     }
 }

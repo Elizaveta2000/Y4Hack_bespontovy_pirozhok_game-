@@ -48,7 +48,26 @@ namespace Y4Hack_bespontovy_pirozhok_game
 
         private void clickyes_Click(object sender, EventArgs e)
         {
-            string four = "4";
+            string num = "3";
+            if (score_carrot.Text == num)
+            {
+                clickyes.BackColor = Color.FromArgb(0, 225, 0);
+                fail.Visible = false;
+
+            }
+            else
+            {
+                score_carrot.Text = "0";
+                label4.Visible = true;
+                carrot1.Visible = true;
+                carrot2.Visible = true;
+                carrot3.Visible = true;
+                carrot4.Visible = true;
+                carrot5.Visible = true;
+                carrot6.Visible = true;
+                fail.Visible = true;
+            }
+            /*string four = "3";
             if (score_carrot.Text == four)
             {
                 forward.Visible = true;
@@ -61,7 +80,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
                 clickyes.BackColor = Color.FromArgb(225, 0, 0);
                 label4.Visible = true;
 
-            }
+            }*/
         }
 
         private void carrot1_Click(object sender, EventArgs e)
@@ -102,6 +121,19 @@ namespace Y4Hack_bespontovy_pirozhok_game
             i++;
             score_carrot.Text = i.ToString();
             carrot4.Visible = carrot4.Text != "";
+        }
+
+        private void carrot6_Click(object sender, EventArgs e)
+        {
+            int i = Convert.ToInt32(score_carrot.Text);
+            i++;
+            score_carrot.Text = i.ToString();
+            carrot6.Visible = carrot6.Text != "";
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+         
         }
     }
 }
