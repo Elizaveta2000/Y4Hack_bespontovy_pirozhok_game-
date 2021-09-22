@@ -53,6 +53,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             {
                 clickyes.BackColor = Color.FromArgb(0, 225, 0);
                 fail.Visible = false;
+                yes.Visible = true;
 
             }
             else

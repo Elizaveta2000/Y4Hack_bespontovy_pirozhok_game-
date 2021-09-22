@@ -44,6 +44,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.carrot6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.fail = new System.Windows.Forms.Label();
+            this.yes = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // exit
@@ -202,7 +203,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.fail.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.fail.ForeColor = System.Drawing.Color.Maroon;
             this.fail.Image = ((System.Drawing.Image)(resources.GetObject("fail.Image")));
-            this.fail.Location = new System.Drawing.Point(71, 39);
+            this.fail.Location = new System.Drawing.Point(82, 39);
             this.fail.Name = "fail";
             this.fail.Size = new System.Drawing.Size(190, 118);
             this.fail.TabIndex = 36;
@@ -210,12 +211,27 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.fail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.fail.Visible = false;
             // 
+            // yes
+            // 
+            this.yes.BackColor = System.Drawing.Color.Transparent;
+            this.yes.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.yes.ForeColor = System.Drawing.Color.Maroon;
+            this.yes.Image = ((System.Drawing.Image)(resources.GetObject("yes.Image")));
+            this.yes.Location = new System.Drawing.Point(82, 39);
+            this.yes.Name = "yes";
+            this.yes.Size = new System.Drawing.Size(190, 118);
+            this.yes.TabIndex = 37;
+            this.yes.Text = "Молодчинка!";
+            this.yes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.yes.Visible = false;
+            // 
             // TwoLevel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(684, 661);
+            this.Controls.Add(this.yes);
             this.Controls.Add(this.fail);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.carrot6);
@@ -253,5 +269,6 @@ namespace Y4Hack_bespontovy_pirozhok_game
         private System.Windows.Forms.Label carrot6;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label fail;
+        private System.Windows.Forms.Label yes;
     }
 }
