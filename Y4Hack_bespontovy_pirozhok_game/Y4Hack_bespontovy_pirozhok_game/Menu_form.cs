@@ -21,12 +21,6 @@ namespace Y4Hack_bespontovy_pirozhok_game
             InitializeComponent();
         }
 
-        /* private void playSimpleSound()
-        {
-            System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"C:\Users\Liza\source\repos\Y4Hack\music\untro_menu.wav");
-            player.Play();
-        } */
-
         private void button1_Click(object sender, EventArgs e)
         {
             bool create = false;
@@ -70,7 +64,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             {
                 Exit gameE = new Exit();
                 this.Hide();
-        gameE.Show();
+                gameE.Show();
 
             }
 }

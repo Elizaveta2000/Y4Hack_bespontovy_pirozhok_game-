@@ -42,6 +42,8 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.clickyes = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // carrot1
@@ -61,7 +63,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.score_carrot.Font = new System.Drawing.Font("Showcard Gothic", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.score_carrot.ForeColor = System.Drawing.Color.LimeGreen;
             this.score_carrot.Image = ((System.Drawing.Image)(resources.GetObject("score_carrot.Image")));
-            this.score_carrot.Location = new System.Drawing.Point(518, 9);
+            this.score_carrot.Location = new System.Drawing.Point(507, 9);
             this.score_carrot.Name = "score_carrot";
             this.score_carrot.Size = new System.Drawing.Size(165, 134);
             this.score_carrot.TabIndex = 14;
@@ -108,7 +110,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.label1.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Maroon;
             this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
-            this.label1.Location = new System.Drawing.Point(85, 25);
+            this.label1.Location = new System.Drawing.Point(82, 38);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(190, 118);
             this.label1.TabIndex = 18;
@@ -120,7 +122,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             // 
             this.forward.BackColor = System.Drawing.Color.Transparent;
             this.forward.Image = ((System.Drawing.Image)(resources.GetObject("forward.Image")));
-            this.forward.Location = new System.Drawing.Point(537, 536);
+            this.forward.Location = new System.Drawing.Point(553, 546);
             this.forward.Name = "forward";
             this.forward.Size = new System.Drawing.Size(119, 100);
             this.forward.TabIndex = 20;
@@ -144,23 +146,49 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.label3.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.Maroon;
             this.label3.Image = ((System.Drawing.Image)(resources.GetObject("label3.Image")));
-            this.label3.Location = new System.Drawing.Point(281, 54);
+            this.label3.Location = new System.Drawing.Point(82, 38);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(190, 118);
             this.label3.TabIndex = 22;
             this.label3.Text = "Молодчина!\r\n";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.Visible = false;
             // 
             // clickyes
             // 
             this.clickyes.BackColor = System.Drawing.Color.Transparent;
             this.clickyes.Image = ((System.Drawing.Image)(resources.GetObject("clickyes.Image")));
-            this.clickyes.Location = new System.Drawing.Point(12, 531);
+            this.clickyes.Location = new System.Drawing.Point(12, 536);
             this.clickyes.Name = "clickyes";
             this.clickyes.Size = new System.Drawing.Size(128, 121);
             this.clickyes.TabIndex = 23;
             this.clickyes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.clickyes.Click += new System.EventHandler(this.clickyes_Click);
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.Maroon;
+            this.label4.Image = ((System.Drawing.Image)(resources.GetObject("label4.Image")));
+            this.label4.Location = new System.Drawing.Point(82, 39);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(190, 118);
+            this.label4.TabIndex = 24;
+            this.label4.Text = "Посмотри внимательнее\r\n\r\n";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label4.Visible = false;
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Image = ((System.Drawing.Image)(resources.GetObject("label5.Image")));
+            this.label5.Location = new System.Drawing.Point(12, 9);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(67, 64);
+            this.label5.TabIndex = 25;
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // OneLevel
             // 
@@ -168,6 +196,8 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(684, 661);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.clickyes);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -197,5 +227,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label clickyes;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }

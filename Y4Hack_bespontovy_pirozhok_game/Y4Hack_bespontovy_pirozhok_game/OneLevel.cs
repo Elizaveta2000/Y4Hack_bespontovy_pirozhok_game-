@@ -78,11 +78,39 @@ namespace Y4Hack_bespontovy_pirozhok_game
             {
                 forward.Visible = true;
                 label1.Visible = false;
-                label2.Visible = true;
+                label3.Visible = true;
+                label4.Visible = false;
+                clickyes.BackColor = Color.FromArgb(0, 0,0, 0);
+
             }
             else
             {
-                clickyes.BackColor = Color.FromArgb(207, 169, 97);
+                clickyes.BackColor = Color.FromArgb(225, 0, 0);
+                label4.Visible = true;
+
+            }
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            bool create = false;
+
+            foreach (Form form in Application.OpenForms)
+            {
+                if (form.Name.ToString() == "Game_form")
+                {
+                    this.Hide();
+                    form.Visible = true;
+                    create = true;
+                    break;
+                }
+            }
+
+            if (create == false)
+            {
+                GameMenu_form gameG = new GameMenu_form();
+                this.Hide();
+                gameG.Show();
 
             }
         }

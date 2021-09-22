@@ -38,6 +38,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -113,12 +114,23 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.label8.TabIndex = 19;
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Image = ((System.Drawing.Image)(resources.GetObject("label9.Image")));
+            this.label9.Location = new System.Drawing.Point(12, 9);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(97, 82);
+            this.label9.TabIndex = 20;
+            this.label9.Click += new System.EventHandler(this.label9_Click);
+            // 
             // GameMenu_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Y4Hack_bespontovy_pirozhok_game.Properties.Resources.fone1;
             this.ClientSize = new System.Drawing.Size(684, 661);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -142,5 +154,6 @@ namespace Y4Hack_bespontovy_pirozhok_game
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
     }
 }
