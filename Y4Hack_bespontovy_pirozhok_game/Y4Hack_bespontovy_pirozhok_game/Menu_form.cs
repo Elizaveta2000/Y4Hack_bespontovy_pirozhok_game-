@@ -77,8 +77,6 @@ namespace Y4Hack_bespontovy_pirozhok_game
 
         private void Menu_form_Load(object sender, EventArgs e)
         {
-            SoundPlayer sndPlayer = new SoundPlayer(@"C:\Users\Liza\source\repos\Y4Hack\music\intro_menu.wav");
-            sndPlayer.Play();
 
         }
     }
