@@ -41,13 +41,14 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.forward = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.clickyes = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // carrot1
             // 
             this.carrot1.BackColor = System.Drawing.Color.Transparent;
             this.carrot1.Image = ((System.Drawing.Image)(resources.GetObject("carrot1.Image")));
-            this.carrot1.Location = new System.Drawing.Point(53, 480);
+            this.carrot1.Location = new System.Drawing.Point(176, 382);
             this.carrot1.Name = "carrot1";
             this.carrot1.Size = new System.Drawing.Size(80, 121);
             this.carrot1.TabIndex = 13;
@@ -71,7 +72,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             // 
             this.carrot2.BackColor = System.Drawing.Color.Transparent;
             this.carrot2.Image = ((System.Drawing.Image)(resources.GetObject("carrot2.Image")));
-            this.carrot2.Location = new System.Drawing.Point(198, 305);
+            this.carrot2.Location = new System.Drawing.Point(271, 270);
             this.carrot2.Name = "carrot2";
             this.carrot2.Size = new System.Drawing.Size(79, 112);
             this.carrot2.TabIndex = 15;
@@ -82,7 +83,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             // 
             this.carrot3.BackColor = System.Drawing.Color.Transparent;
             this.carrot3.Image = ((System.Drawing.Image)(resources.GetObject("carrot3.Image")));
-            this.carrot3.Location = new System.Drawing.Point(368, 454);
+            this.carrot3.Location = new System.Drawing.Point(425, 382);
             this.carrot3.Name = "carrot3";
             this.carrot3.Size = new System.Drawing.Size(80, 121);
             this.carrot3.TabIndex = 16;
@@ -94,7 +95,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.carrot4.BackColor = System.Drawing.Color.Transparent;
             this.carrot4.ForeColor = System.Drawing.SystemColors.ControlText;
             this.carrot4.Image = ((System.Drawing.Image)(resources.GetObject("carrot4.Image")));
-            this.carrot4.Location = new System.Drawing.Point(484, 321);
+            this.carrot4.Location = new System.Drawing.Point(537, 261);
             this.carrot4.Name = "carrot4";
             this.carrot4.Size = new System.Drawing.Size(80, 121);
             this.carrot4.TabIndex = 17;
@@ -150,12 +151,24 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.label3.Text = "Молодчина!\r\n";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // clickyes
+            // 
+            this.clickyes.BackColor = System.Drawing.Color.Transparent;
+            this.clickyes.Image = ((System.Drawing.Image)(resources.GetObject("clickyes.Image")));
+            this.clickyes.Location = new System.Drawing.Point(12, 531);
+            this.clickyes.Name = "clickyes";
+            this.clickyes.Size = new System.Drawing.Size(128, 121);
+            this.clickyes.TabIndex = 23;
+            this.clickyes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.clickyes.Click += new System.EventHandler(this.clickyes_Click);
+            // 
             // OneLevel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(684, 661);
+            this.Controls.Add(this.clickyes);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.forward);
@@ -183,5 +196,6 @@ namespace Y4Hack_bespontovy_pirozhok_game
         private System.Windows.Forms.Label forward;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label clickyes;
     }
 }

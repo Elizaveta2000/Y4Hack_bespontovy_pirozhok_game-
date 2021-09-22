@@ -22,7 +22,8 @@ namespace Y4Hack_bespontovy_pirozhok_game
             int i = Convert.ToInt32(score_carrot.Text);
             i++;
             score_carrot.Text = i.ToString();
-            carrot1.Visible = carrot1.Text != "";                   
+            carrot1.Visible = carrot1.Text != "";
+
         }
 
         private void carrot2_Click(object sender, EventArgs e)
@@ -31,6 +32,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             i++;
             score_carrot.Text = i.ToString();
             carrot2.Visible = carrot2.Text != "";
+
         }
 
         private void carrot3_Click(object sender, EventArgs e)
@@ -39,6 +41,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             i++;
             score_carrot.Text = i.ToString();
             carrot3.Visible = carrot3.Text != "";
+
         }
 
         private void carrot4_Click(object sender, EventArgs e)
@@ -47,8 +50,9 @@ namespace Y4Hack_bespontovy_pirozhok_game
             i++;
             score_carrot.Text = i.ToString();
             carrot4.Visible = carrot4.Text != "";
-        } 
-        
+
+        }
+
 
         private void OneLevel_Load(object sender, EventArgs e)
         {
@@ -58,20 +62,30 @@ namespace Y4Hack_bespontovy_pirozhok_game
 
         private void forward_Click(object sender, EventArgs e)
         {
-            /* string four = "4";
 
-              if (score_carrot.Text == four)
-              {
-                  forward.Visible = true;
-              } */
-         
         }
-
 
         private void label1_Click_1(object sender, EventArgs e)
         {
 
             
         }
+
+        private void clickyes_Click(object sender, EventArgs e)
+        {
+            string four = "4";
+            if (score_carrot.Text == four)
+            {
+                forward.Visible = true;
+                label1.Visible = false;
+                label2.Visible = true;
+            }
+            else
+            {
+                clickyes.BackColor = Color.FromArgb(207, 169, 97);
+
+            }
+        }
     }
+
 }
