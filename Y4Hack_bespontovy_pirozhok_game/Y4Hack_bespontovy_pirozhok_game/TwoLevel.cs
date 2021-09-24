@@ -274,6 +274,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
 
         private void forward_Click(object sender, EventArgs e) // переход на 3 уровень
         {
+          /*
             bool create = false;
 
             foreach (Form form in Application.OpenForms)
@@ -293,6 +294,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
                 this.Hide();
                 gameTh.Show();
             }
+          */
         }
     }
 }

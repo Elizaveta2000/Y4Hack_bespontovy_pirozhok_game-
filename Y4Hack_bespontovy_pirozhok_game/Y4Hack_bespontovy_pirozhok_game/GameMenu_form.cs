@@ -90,6 +90,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             }
         }
 
+        /*
         private void label3_Click(object sender, EventArgs e)
         {
             bool create = false;
@@ -227,6 +228,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
                 gameE.Show();
             }
         }
+        */
     }
     }
 
