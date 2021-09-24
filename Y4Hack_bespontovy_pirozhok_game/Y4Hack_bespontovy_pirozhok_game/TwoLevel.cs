@@ -22,11 +22,11 @@ namespace Y4Hack_bespontovy_pirozhok_game
 
         }
 
-        private void exit_Click(object sender, EventArgs e)
+        private void exit_Click(object sender, EventArgs e) // выход в меню
         {
             bool create = false;
 
-            foreach (Form form in Application.OpenForms)
+            foreach (Form form in Application.OpenForms) // переход на 3 уровень
             {
                 if (form.Name.ToString() == "Game_form")
                 {
@@ -46,42 +46,67 @@ namespace Y4Hack_bespontovy_pirozhok_game
             }
         }
 
-        private void clickyes_Click(object sender, EventArgs e)
+        private void clickyes_Click(object sender, EventArgs e) // обработка кнопки "готово"
         {
             string num = "3";
-            if (score_carrot.Text == num)
+            if (score_carrot.Text == num) // верный ответ
             {
-                clickyes.BackColor = Color.FromArgb(0, 225, 0);
+                start.Visible = false;
                 fail.Visible = false;
                 yes.Visible = true;
-
-            }
-            else
-            {
+                example1.Visible = false;
+                example2.Visible = true;
                 score_carrot.Text = "0";
-                label4.Visible = true;
                 carrot1.Visible = true;
                 carrot2.Visible = true;
                 carrot3.Visible = true;
                 carrot4.Visible = true;
                 carrot5.Visible = true;
                 carrot6.Visible = true;
-                fail.Visible = true;
+                string num2 = "5";
+
+                if (score_carrot.Text == num2) // верный ответ
+                {
+                    start.Visible = false;
+                    fail.Visible = false;
+                    yes.Visible = true;
+                    example2.Visible = false;
+                    score_carrot.Text = "0";
+                    carrot1.Visible = true;
+                    carrot2.Visible = true;
+                    carrot3.Visible = true;
+                    carrot4.Visible = true;
+                    carrot5.Visible = true;
+                    carrot6.Visible = true;
+                }
+                else // не верный ответ
+                {
+                    score_carrot.Text = "0"; // обнулим морковь
+                    fail.Visible = true; // покажем коммент с проигрышем
+                    yes.Visible = false; // уберем коммент с выигрышем
+                    start.Visible = false; // уберем коммент привет
+                    carrot1.Visible = true; // вернем морковь
+                    carrot2.Visible = true; // вернем морковь
+                    carrot3.Visible = true; // вернем морковь
+                    carrot4.Visible = true; // вернем морковь
+                    carrot5.Visible = true; // вернем морковь
+                    carrot6.Visible = true; // вернем морковь
+                }
             }
-            /*string four = "3";
-            if (score_carrot.Text == four)
+            else // не верный ответ
             {
-                forward.Visible = true;
-
-                clickyes.BackColor = Color.FromArgb(0, 0, 0, 0);
-
+                score_carrot.Text = "0"; // обнулим морковь
+                fail.Visible = true; // покажем коммент с проигрышем
+                yes.Visible = false; // уберем коммент с выигрышем
+                start.Visible = false; // уберем коммент привет
+                carrot1.Visible = true; // вернем морковь
+                carrot2.Visible = true; // вернем морковь
+                carrot3.Visible = true; // вернем морковь
+                carrot4.Visible = true; // вернем морковь
+                carrot5.Visible = true; // вернем морковь
+                carrot6.Visible = true; // вернем морковь
             }
-            else
-            {
-                clickyes.BackColor = Color.FromArgb(225, 0, 0);
-                label4.Visible = true;
 
-            }*/
         }
 
         private void carrot1_Click(object sender, EventArgs e)

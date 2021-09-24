@@ -17,7 +17,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             InitializeComponent();
     }                        
 
-    private void label1_Click(object sender, EventArgs e)
+    private void label1_Click(object sender, EventArgs e) // вывод числа морковок на солнце для 1 морковки 
         {
             int i = Convert.ToInt32(score_carrot.Text);
             i++;
@@ -26,7 +26,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
 
         }
 
-        private void carrot2_Click(object sender, EventArgs e)
+        private void carrot2_Click(object sender, EventArgs e) // вывод числа морковок на солнце для 2 морковки
         {
             int i = Convert.ToInt32(score_carrot.Text);
             i++;
@@ -35,7 +35,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
 
         }
 
-        private void carrot3_Click(object sender, EventArgs e)
+        private void carrot3_Click(object sender, EventArgs e) // вывод числа морковок на солнце для 3 морковки
         {
             int i = Convert.ToInt32(score_carrot.Text);
             i++;
@@ -44,7 +44,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
 
         }
 
-        private void carrot4_Click(object sender, EventArgs e)
+        private void carrot4_Click(object sender, EventArgs e) // вывод числа морковок на солнце для 4 морковки
         {
             int i = Convert.ToInt32(score_carrot.Text);
             i++;
@@ -60,7 +60,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
 
         }
 
-        private void forward_Click(object sender, EventArgs e)
+        private void forward_Click(object sender, EventArgs e) // переход на 2 уровень
         {
             bool create = false;
 
@@ -90,27 +90,23 @@ namespace Y4Hack_bespontovy_pirozhok_game
             
         }
 
-        private void clickyes_Click(object sender, EventArgs e)
+        private void clickyes_Click(object sender, EventArgs e) // обработка клика на "готово"
         {
-            string four = "4";
-            if (score_carrot.Text == four)
+            string num = "4"; // число морковок на поле
+            if (score_carrot.Text == num) // все ли морковки собраны?
             {
-                forward.Visible = true;
-                label1.Visible = false;
-                label3.Visible = true;
-                label4.Visible = false;
-                clickyes.BackColor = Color.FromArgb(0, 0,0, 0);
-
+                forward.Visible = true; // показываем кнопку далее
+                start.Visible = false; // убираем задание
+                yes.Visible = true; // показываем коммент выигрыша
+                attention.Visible = false; // убираем коммент если ранее не все морковки были собраны
             }
             else
             {
-                clickyes.BackColor = Color.FromArgb(225, 0, 0);
-                label4.Visible = true;
-
+                attention.Visible = true; // говорим смотреть внимательнее
             }
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        private void exit_Click(object sender, EventArgs e) // выход в меню
         {
             bool create = false;
 

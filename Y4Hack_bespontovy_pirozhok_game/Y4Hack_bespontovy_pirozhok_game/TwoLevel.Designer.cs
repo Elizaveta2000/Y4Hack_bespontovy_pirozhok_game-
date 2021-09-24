@@ -39,12 +39,13 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.carrot2 = new System.Windows.Forms.Label();
             this.carrot1 = new System.Windows.Forms.Label();
             this.forward = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.start = new System.Windows.Forms.Label();
             this.carrot5 = new System.Windows.Forms.Label();
             this.carrot6 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.example1 = new System.Windows.Forms.Label();
             this.fail = new System.Windows.Forms.Label();
             this.yes = new System.Windows.Forms.Label();
+            this.example2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // exit
@@ -147,18 +148,18 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.forward.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.forward.Visible = false;
             // 
-            // label4
+            // start
             // 
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.Maroon;
-            this.label4.Image = ((System.Drawing.Image)(resources.GetObject("label4.Image")));
-            this.label4.Location = new System.Drawing.Point(82, 39);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(190, 118);
-            this.label4.TabIndex = 32;
-            this.label4.Text = "Давай \r\nпосчитаем!";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.start.BackColor = System.Drawing.Color.Transparent;
+            this.start.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.start.ForeColor = System.Drawing.Color.Maroon;
+            this.start.Image = ((System.Drawing.Image)(resources.GetObject("start.Image")));
+            this.start.Location = new System.Drawing.Point(82, 39);
+            this.start.Name = "start";
+            this.start.Size = new System.Drawing.Size(190, 118);
+            this.start.TabIndex = 32;
+            this.start.Text = "Давай \r\nпосчитаем!";
+            this.start.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // carrot5
             // 
@@ -184,18 +185,18 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.carrot6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.carrot6.Click += new System.EventHandler(this.carrot6_Click);
             // 
-            // label1
+            // example1
             // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Showcard Gothic", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label1.Location = new System.Drawing.Point(255, 39);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(235, 83);
-            this.label1.TabIndex = 35;
-            this.label1.Text = "2+1";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.example1.BackColor = System.Drawing.Color.Transparent;
+            this.example1.Font = new System.Drawing.Font("Showcard Gothic", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.example1.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.example1.Location = new System.Drawing.Point(255, 39);
+            this.example1.Name = "example1";
+            this.example1.Size = new System.Drawing.Size(235, 83);
+            this.example1.TabIndex = 35;
+            this.example1.Text = "2+1";
+            this.example1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.example1.Click += new System.EventHandler(this.label1_Click);
             // 
             // fail
             // 
@@ -225,18 +226,30 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.yes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.yes.Visible = false;
             // 
+            // example2
+            // 
+            this.example2.BackColor = System.Drawing.Color.Transparent;
+            this.example2.Font = new System.Drawing.Font("Showcard Gothic", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.example2.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.example2.Location = new System.Drawing.Point(255, 39);
+            this.example2.Name = "example2";
+            this.example2.Size = new System.Drawing.Size(235, 83);
+            this.example2.TabIndex = 38;
+            this.example2.Text = "4+1";
+            this.example2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.example2.Visible = false;
+            // 
             // TwoLevel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(684, 661);
-            this.Controls.Add(this.yes);
-            this.Controls.Add(this.fail);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.example2);
+            this.Controls.Add(this.example1);
             this.Controls.Add(this.carrot6);
             this.Controls.Add(this.carrot5);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.start);
             this.Controls.Add(this.forward);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.carrot4);
@@ -246,6 +259,8 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.Controls.Add(this.score_carrot);
             this.Controls.Add(this.clickyes);
             this.Controls.Add(this.exit);
+            this.Controls.Add(this.yes);
+            this.Controls.Add(this.fail);
             this.Name = "TwoLevel";
             this.Text = "TwoLevel";
             this.Load += new System.EventHandler(this.TwoLevel_Load);
@@ -264,11 +279,12 @@ namespace Y4Hack_bespontovy_pirozhok_game
         private System.Windows.Forms.Label carrot2;
         private System.Windows.Forms.Label carrot1;
         private System.Windows.Forms.Label forward;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label start;
         private System.Windows.Forms.Label carrot5;
         private System.Windows.Forms.Label carrot6;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label example1;
         private System.Windows.Forms.Label fail;
         private System.Windows.Forms.Label yes;
+        private System.Windows.Forms.Label example2;
     }
 }
