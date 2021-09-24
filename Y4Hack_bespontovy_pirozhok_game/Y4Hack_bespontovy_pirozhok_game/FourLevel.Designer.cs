@@ -1,7 +1,7 @@
 ﻿
 namespace Y4Hack_bespontovy_pirozhok_game
 {
-    partial class ThreeLevel
+    partial class FourLevel
     {
         /// <summary>
         /// Required designer variable.
@@ -378,7 +378,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.Controls.Add(this.start);
             this.Name = "ThreeLevel";
             this.Text = "TwoLevel";
-            this.Load += new System.EventHandler(this.ThreeLevel_Load);
+            this.Load += new System.EventHandler(this.FourLevel_Load);
             this.ResumeLayout(false);
 
         }

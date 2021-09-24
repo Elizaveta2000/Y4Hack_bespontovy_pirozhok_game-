@@ -12,6 +12,21 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Update="EightLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SevenLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SixLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FiveLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FourLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="ThreeLevel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -21,6 +36,99 @@
     <EmbeddedResource Update="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ThreeLevel - Копировать %282%29 - Копировать %282%29 - Копировать.resx">
+      <DependentUpon>ThreeLevel - Копировать (2) - Копировать (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ThreeLevel - Копировать %282%29 - Копировать %282%29.resx">
+      <DependentUpon>ThreeLevel - Копировать (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ThreeLevel - Копировать %282%29 - Копировать %283%29.resx">
+      <DependentUpon>ThreeLevel - Копировать (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ThreeLevel - Копировать %282%29 - Копировать - Копировать %282%29.resx">
+      <DependentUpon>ThreeLevel - Копировать (2) - Копировать.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ThreeLevel - Копировать %282%29 - Копировать - Копировать - Копировать.resx">
+      <DependentUpon>ThreeLevel - Копировать (2) - Копировать - Копировать.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ThreeLevel - Копировать %282%29 - Копировать - Копировать.resx">
+      <DependentUpon>ThreeLevel - Копировать (2) - Копировать.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ThreeLevel - Копировать %282%29 - Копировать.resx">
+      <DependentUpon>ThreeLevel - Копировать (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ThreeLevel - Копировать %282%29.resx">
+      <DependentUpon>ThreeLevel.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ThreeLevel - Копировать %283%29 - Копировать %282%29.resx">
+      <DependentUpon>ThreeLevel - Копировать (3).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ThreeLevel - Копировать %283%29 - Копировать - Копировать.resx">
+      <DependentUpon>ThreeLevel - Копировать (3) - Копировать.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ThreeLevel - Копировать %283%29 - Копировать.resx">
+      <DependentUpon>ThreeLevel - Копировать (3).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ThreeLevel - Копировать %283%29.resx">
+      <DependentUpon>ThreeLevel.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ThreeLevel - Копировать %284%29 - Копировать.resx">
+      <DependentUpon>ThreeLevel - Копировать (4).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ThreeLevel - Копировать %284%29.resx">
+      <DependentUpon>ThreeLevel.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ThreeLevel - Копировать %285%29.resx">
+      <DependentUpon>ThreeLevel.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ThreeLevel - Копировать - Копировать %282%29 - Копировать %282%29.resx">
+      <DependentUpon>ThreeLevel - Копировать - Копировать (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ThreeLevel - Копировать - Копировать %282%29 - Копировать - Копировать.resx">
+      <DependentUpon>ThreeLevel - Копировать - Копировать (2) - Копировать.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ThreeLevel - Копировать - Копировать %282%29 - Копировать.resx">
+      <DependentUpon>ThreeLevel - Копировать - Копировать (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ThreeLevel - Копировать - Копировать %282%29.resx">
+      <DependentUpon>ThreeLevel - Копировать.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ThreeLevel - Копировать - Копировать %283%29 - Копировать.resx">
+      <DependentUpon>ThreeLevel - Копировать - Копировать (3).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ThreeLevel - Копировать - Копировать %283%29.resx">
+      <DependentUpon>ThreeLevel - Копировать.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ThreeLevel - Копировать - Копировать %284%29.resx">
+      <DependentUpon>ThreeLevel - Копировать.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ThreeLevel - Копировать - Копировать - Копировать %282%29 - Копировать.resx">
+      <DependentUpon>ThreeLevel - Копировать - Копировать - Копировать (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ThreeLevel - Копировать - Копировать - Копировать %282%29.resx">
+      <DependentUpon>ThreeLevel - Копировать - Копировать.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ThreeLevel - Копировать - Копировать - Копировать %283%29.resx">
+      <DependentUpon>ThreeLevel - Копировать - Копировать.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ThreeLevel - Копировать - Копировать - Копировать - Копировать %282%29.resx">
+      <DependentUpon>ThreeLevel - Копировать - Копировать - Копировать.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ThreeLevel - Копировать - Копировать - Копировать - Копировать - Копировать.resx">
+      <DependentUpon>ThreeLevel - Копировать - Копировать - Копировать - Копировать.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ThreeLevel - Копировать - Копировать - Копировать - Копировать.resx">
+      <DependentUpon>ThreeLevel - Копировать - Копировать - Копировать.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ThreeLevel - Копировать - Копировать - Копировать.resx">
+      <DependentUpon>ThreeLevel - Копировать - Копировать.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ThreeLevel - Копировать - Копировать.resx">
+      <DependentUpon>ThreeLevel - Копировать.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ThreeLevel - Копировать.resx">
+      <DependentUpon>ThreeLevel.resx</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
 

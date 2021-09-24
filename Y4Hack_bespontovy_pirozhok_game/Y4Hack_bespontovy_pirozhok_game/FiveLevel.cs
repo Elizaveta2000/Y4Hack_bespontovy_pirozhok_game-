@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace Y4Hack_bespontovy_pirozhok_game
 {
-    public partial class ThreeLevel : Form
+    public partial class FiveLevel : Form
     {
-        public ThreeLevel()
+        public FiveLevel()
         {
             InitializeComponent();
         }
 
-        private void ThreeLevel_Load(object sender, EventArgs e) { }
+        private void FiveLevel_Load(object sender, EventArgs e) { }
 
         private void exit_Click(object sender, EventArgs e) // выход в меню
         {
@@ -278,7 +278,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
 
             foreach (Form form in Application.OpenForms)
             {
-                if (form.Name.ToString() == "fourLevel_form")
+                if (form.Name.ToString() == "SixLevel_form")
                 {
                     this.Hide();
                     form.Visible = true;
@@ -289,9 +289,9 @@ namespace Y4Hack_bespontovy_pirozhok_game
 
             if (create == false)
             {
-                FourLevel gameF = new FourLevel();
+                SixLevel gameSx = new SixLevel();
                 this.Hide();
-                gameF.Show();
+                gameSx.Show();
             }
         }
     }
