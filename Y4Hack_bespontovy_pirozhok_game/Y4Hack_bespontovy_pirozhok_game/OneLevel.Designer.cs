@@ -116,7 +116,6 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.start.TabIndex = 18;
             this.start.Text = "Собери\r\nвсе морковки \r\nна лугу \r\n";
             this.start.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.start.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // forward
             // 

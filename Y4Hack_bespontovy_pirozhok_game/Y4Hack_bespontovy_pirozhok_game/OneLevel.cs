@@ -15,9 +15,11 @@ namespace Y4Hack_bespontovy_pirozhok_game
         public OneLevel()
         {
             InitializeComponent();
-    }                        
+    }
 
-    private void label1_Click(object sender, EventArgs e) // вывод числа морковок на солнце для 1 морковки 
+        private void OneLevel_Load(object sender, EventArgs e) { }
+   
+        private void label1_Click(object sender, EventArgs e) // вывод числа морковок на солнце для 1 морковки 
         {
             int i = Convert.ToInt32(score_carrot.Text);
             i++;
@@ -25,7 +27,6 @@ namespace Y4Hack_bespontovy_pirozhok_game
             carrot1.Visible = carrot1.Text != "";
 
         }
-
         private void carrot2_Click(object sender, EventArgs e) // вывод числа морковок на солнце для 2 морковки
         {
             int i = Convert.ToInt32(score_carrot.Text);
@@ -34,7 +35,6 @@ namespace Y4Hack_bespontovy_pirozhok_game
             carrot2.Visible = carrot2.Text != "";
 
         }
-
         private void carrot3_Click(object sender, EventArgs e) // вывод числа морковок на солнце для 3 морковки
         {
             int i = Convert.ToInt32(score_carrot.Text);
@@ -43,7 +43,6 @@ namespace Y4Hack_bespontovy_pirozhok_game
             carrot3.Visible = carrot3.Text != "";
 
         }
-
         private void carrot4_Click(object sender, EventArgs e) // вывод числа морковок на солнце для 4 морковки
         {
             int i = Convert.ToInt32(score_carrot.Text);
@@ -52,14 +51,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             carrot4.Visible = carrot4.Text != "";
 
         }
-
-
-        private void OneLevel_Load(object sender, EventArgs e)
-        {
-            
-
-        }
-
+      
         private void forward_Click(object sender, EventArgs e) // переход на 2 уровень
         {
             bool create = false;
@@ -82,14 +74,8 @@ namespace Y4Hack_bespontovy_pirozhok_game
                 gameT.Show();
 
             }
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-            
-        }
-
+        }  
+       
         private void clickyes_Click(object sender, EventArgs e) // обработка клика на "готово"
         {
             string num = "4"; // число морковок на поле
