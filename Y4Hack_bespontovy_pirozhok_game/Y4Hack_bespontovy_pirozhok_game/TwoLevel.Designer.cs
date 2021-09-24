@@ -50,6 +50,10 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.example4 = new System.Windows.Forms.Label();
             this.example5 = new System.Windows.Forms.Label();
             this.clickyes2 = new System.Windows.Forms.Label();
+            this.clickyes3 = new System.Windows.Forms.Label();
+            this.carrot7 = new System.Windows.Forms.Label();
+            this.clickyes4 = new System.Windows.Forms.Label();
+            this.clickyes5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // exit
@@ -285,12 +289,61 @@ namespace Y4Hack_bespontovy_pirozhok_game
             // 
             this.clickyes2.BackColor = System.Drawing.Color.Transparent;
             this.clickyes2.Image = ((System.Drawing.Image)(resources.GetObject("clickyes2.Image")));
-            this.clickyes2.Location = new System.Drawing.Point(278, 270);
+            this.clickyes2.Location = new System.Drawing.Point(12, 536);
             this.clickyes2.Name = "clickyes2";
             this.clickyes2.Size = new System.Drawing.Size(128, 121);
             this.clickyes2.TabIndex = 42;
             this.clickyes2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.clickyes2.Visible = false;
+            this.clickyes2.Click += new System.EventHandler(this.clickyes2_Click);
+            // 
+            // clickyes3
+            // 
+            this.clickyes3.BackColor = System.Drawing.Color.Transparent;
+            this.clickyes3.Image = ((System.Drawing.Image)(resources.GetObject("clickyes3.Image")));
+            this.clickyes3.Location = new System.Drawing.Point(12, 536);
+            this.clickyes3.Name = "clickyes3";
+            this.clickyes3.Size = new System.Drawing.Size(128, 121);
+            this.clickyes3.TabIndex = 43;
+            this.clickyes3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.clickyes3.Visible = false;
+            this.clickyes3.Click += new System.EventHandler(this.clickyes3_Click);
+            // 
+            // carrot7
+            // 
+            this.carrot7.BackColor = System.Drawing.Color.Transparent;
+            this.carrot7.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.carrot7.Image = ((System.Drawing.Image)(resources.GetObject("carrot7.Image")));
+            this.carrot7.Location = new System.Drawing.Point(410, 232);
+            this.carrot7.Name = "carrot7";
+            this.carrot7.Size = new System.Drawing.Size(80, 121);
+            this.carrot7.TabIndex = 44;
+            this.carrot7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.carrot7.Click += new System.EventHandler(this.carrot7_Click);
+            // 
+            // clickyes4
+            // 
+            this.clickyes4.BackColor = System.Drawing.Color.Transparent;
+            this.clickyes4.Image = ((System.Drawing.Image)(resources.GetObject("clickyes4.Image")));
+            this.clickyes4.Location = new System.Drawing.Point(12, 536);
+            this.clickyes4.Name = "clickyes4";
+            this.clickyes4.Size = new System.Drawing.Size(128, 121);
+            this.clickyes4.TabIndex = 45;
+            this.clickyes4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.clickyes4.Visible = false;
+            this.clickyes4.Click += new System.EventHandler(this.clickyes4_Click);
+            // 
+            // clickyes5
+            // 
+            this.clickyes5.BackColor = System.Drawing.Color.Transparent;
+            this.clickyes5.Image = ((System.Drawing.Image)(resources.GetObject("clickyes5.Image")));
+            this.clickyes5.Location = new System.Drawing.Point(12, 536);
+            this.clickyes5.Name = "clickyes5";
+            this.clickyes5.Size = new System.Drawing.Size(128, 121);
+            this.clickyes5.TabIndex = 46;
+            this.clickyes5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.clickyes5.Visible = false;
+            this.clickyes5.Click += new System.EventHandler(this.clickyes5_Click);
             // 
             // TwoLevel
             // 
@@ -298,6 +351,10 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(684, 661);
+            this.Controls.Add(this.clickyes5);
+            this.Controls.Add(this.clickyes4);
+            this.Controls.Add(this.carrot7);
+            this.Controls.Add(this.clickyes3);
             this.Controls.Add(this.clickyes2);
             this.Controls.Add(this.example5);
             this.Controls.Add(this.example4);
@@ -347,5 +404,9 @@ namespace Y4Hack_bespontovy_pirozhok_game
         private System.Windows.Forms.Label example4;
         private System.Windows.Forms.Label example5;
         private System.Windows.Forms.Label clickyes2;
+        private System.Windows.Forms.Label clickyes3;
+        private System.Windows.Forms.Label carrot7;
+        private System.Windows.Forms.Label clickyes4;
+        private System.Windows.Forms.Label clickyes5;
     }
 }
