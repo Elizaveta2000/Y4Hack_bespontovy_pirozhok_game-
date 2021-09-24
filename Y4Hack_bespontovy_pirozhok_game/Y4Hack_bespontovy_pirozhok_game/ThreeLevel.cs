@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Y4Hack_bespontovy_pirozhok_game
 {
-    public partial class TwoLevel : Form
+    public partial class ThreeLevel : Form
     {
-        public TwoLevel()
+        public ThreeLevel()
         {
             InitializeComponent();
         }
@@ -95,7 +95,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
 
         private void clickyes1_Click(object sender, EventArgs e) // обработка кнопки "готово 1 пример"
         {
-            string num1 = "3";
+            string num1 = "1";
             if (score_carrot.Text == num1) // верный ответ
             {
                 start.Visible = false; // убираем задание
@@ -130,7 +130,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
         }
         private void clickyes2_Click(object sender, EventArgs e) // обработка кнопки "готово 2 пример"
         {
-            string num2 = "5";
+            string num2 = "3";
             
             if (score_carrot.Text == num2) // верный ответ
             {
@@ -168,7 +168,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
         }
         private void clickyes3_Click(object sender, EventArgs e) // обработка кнопки "готово 3 пример"
         {
-            string num3 = "1";
+            string num3 = "2";
 
             if (score_carrot.Text == num3) // верный ответ
             {
@@ -206,7 +206,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
         }
         private void clickyes4_Click(object sender, EventArgs e) // обработка кнопки "готово 4 пример"
         {
-            string num4 = "7";
+            string num4 = "5";
 
             if (score_carrot.Text == num4) // верный ответ
             {
@@ -244,7 +244,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
         }
         private void clickyes5_Click(object sender, EventArgs e) // обработка кнопки "готово 5 пример", последний
         {
-            string num5 = "4";
+            string num5 = "0";
 
             if (score_carrot.Text == num5) // верный ответ
             {
@@ -272,7 +272,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             }
         }
 
-        private void forward_Click(object sender, EventArgs e) // переход на 3 уровень
+        private void forward_Click(object sender, EventArgs e) // переход на 4 уровень
         {
             bool create = false;
 

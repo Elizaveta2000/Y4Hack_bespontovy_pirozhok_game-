@@ -89,6 +89,29 @@ namespace Y4Hack_bespontovy_pirozhok_game
 
             }
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            bool create = false;
+
+            foreach (Form form in Application.OpenForms)
+            {
+                if (form.Name.ToString() == "threeLevel_form")
+                {
+                    this.Hide();
+                    form.Visible = true;
+                    create = true;
+                    break;
+                }
+            }
+
+            if (create == false)
+            {
+                ThreeLevel gameTh = new ThreeLevel();
+                this.Hide();
+                gameTh.Show();
+            }
+        }
     }
     }
 

@@ -1,7 +1,7 @@
 ﻿
 namespace Y4Hack_bespontovy_pirozhok_game
 {
-    partial class TwoLevel
+    partial class ThreeLevel
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TwoLevel));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThreeLevel));
             this.exit = new System.Windows.Forms.Label();
             this.clickyes1 = new System.Windows.Forms.Label();
             this.score_carrot = new System.Windows.Forms.Label();
@@ -203,7 +203,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.example1.Name = "example1";
             this.example1.Size = new System.Drawing.Size(235, 83);
             this.example1.TabIndex = 35;
-            this.example1.Text = "2+1";
+            this.example1.Text = "4-3";
             this.example1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // fail
@@ -243,7 +243,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.example2.Name = "example2";
             this.example2.Size = new System.Drawing.Size(235, 83);
             this.example2.TabIndex = 38;
-            this.example2.Text = "4+1";
+            this.example2.Text = "7-4";
             this.example2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.example2.Visible = false;
             // 
@@ -256,7 +256,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.example3.Name = "example3";
             this.example3.Size = new System.Drawing.Size(235, 83);
             this.example3.TabIndex = 39;
-            this.example3.Text = "0+1";
+            this.example3.Text = "4-2";
             this.example3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.example3.Visible = false;
             // 
@@ -269,7 +269,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.example4.Name = "example4";
             this.example4.Size = new System.Drawing.Size(235, 83);
             this.example4.TabIndex = 40;
-            this.example4.Text = "5+2";
+            this.example4.Text = "10-5";
             this.example4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.example4.Visible = false;
             // 
@@ -282,7 +282,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.example5.Name = "example5";
             this.example5.Size = new System.Drawing.Size(235, 83);
             this.example5.TabIndex = 41;
-            this.example5.Text = "2+2";
+            this.example5.Text = "6-6";
             this.example5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.example5.Visible = false;
             // 
@@ -346,7 +346,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.clickyes5.Visible = false;
             this.clickyes5.Click += new System.EventHandler(this.clickyes5_Click);
             // 
-            // TwoLevel
+            // ThreeLevel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -376,7 +376,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.Controls.Add(this.yes);
             this.Controls.Add(this.fail);
             this.Controls.Add(this.start);
-            this.Name = "TwoLevel";
+            this.Name = "ThreeLevel";
             this.Text = "TwoLevel";
             this.Load += new System.EventHandler(this.TwoLevel_Load);
             this.ResumeLayout(false);
