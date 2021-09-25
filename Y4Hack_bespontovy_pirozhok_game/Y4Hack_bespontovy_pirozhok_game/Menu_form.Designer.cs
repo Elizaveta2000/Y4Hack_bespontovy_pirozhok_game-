@@ -97,11 +97,11 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Showcard Gothic", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label2.Location = new System.Drawing.Point(114, 42);
+            this.label2.Location = new System.Drawing.Point(120, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(485, 70);
+            this.label2.Size = new System.Drawing.Size(485, 162);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Bunny calc";
+            this.label2.Text = "The Bunny Calculates";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Menu_form
