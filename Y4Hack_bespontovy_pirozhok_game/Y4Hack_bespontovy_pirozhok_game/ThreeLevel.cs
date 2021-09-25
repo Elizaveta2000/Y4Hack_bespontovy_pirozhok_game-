@@ -120,6 +120,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             score_carrot.Text = i.ToString();
             carrot4.Visible = carrot4.Text != "";
         }
+
         private void clickyes1_Click_1(object sender, EventArgs e)// обработка кнопки "готово 1 пример"
         {
      
@@ -155,9 +156,8 @@ namespace Y4Hack_bespontovy_pirozhok_game
                 carrot6.Visible = true; // вернем морковь
                 fail.Visible = true; // покажем коммент с проигрышем
             }
-        
-
         }
+
         private void clickyes2_Click_1(object sender, EventArgs e)// обработка кнопки "готово 2 пример"
         {
       
