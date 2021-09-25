@@ -96,6 +96,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             score_carrot.Text = i.ToString();
             carrot4.Visible = carrot4.Text != "";
         }
+       
         private void carrot8_Click(object sender, EventArgs e)
         {
             int i = Convert.ToInt32(score_carrot.Text);
