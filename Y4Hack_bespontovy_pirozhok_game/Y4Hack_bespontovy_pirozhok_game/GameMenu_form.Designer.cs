@@ -89,6 +89,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.label5.Size = new System.Drawing.Size(66, 64);
             this.label5.TabIndex = 16;
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -98,6 +99,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.label6.Size = new System.Drawing.Size(66, 64);
             this.label6.TabIndex = 17;
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
             // 

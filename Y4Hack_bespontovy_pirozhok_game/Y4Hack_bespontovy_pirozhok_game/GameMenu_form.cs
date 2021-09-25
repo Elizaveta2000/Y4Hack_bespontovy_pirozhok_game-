@@ -116,6 +116,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
 
         private void label4_Click(object sender, EventArgs e)
         {
+
             bool create = false;
 
             foreach (Form form in Application.OpenForms)
@@ -127,26 +128,15 @@ namespace Y4Hack_bespontovy_pirozhok_game
                     create = true;
                     break;
                 }
-
-                if (create == false)
-                {
-                    FourLevel gameF = new FourLevel();
-                    this.Hide();
-                    gameF.Show();
-                }
-
             }
-        }
 
-        /*
-        private void label3_Click(object sender, EventArgs e)
-        {
-            
-        }
+            if (create == false)
+            {
+                FourLevel gameF = new FourLevel();
+                this.Hide();
+                gameF.Show();
+            }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-            
 
         }
 
@@ -156,7 +146,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
 
             foreach (Form form in Application.OpenForms)
             {
-                if (form.Name.ToString() == "fiveLevel_form")
+                if (form.Name.ToString() == "FiveLevel_form")
                 {
                     this.Hide();
                     form.Visible = true;
@@ -167,9 +157,9 @@ namespace Y4Hack_bespontovy_pirozhok_game
 
             if (create == false)
             {
-                FiveLevel gameF = new FiveLevel();
+                FiveLevel gameFi = new FiveLevel();
                 this.Hide();
-                gameF.Show();
+                gameFi.Show();
             }
         }
 
@@ -190,58 +180,14 @@ namespace Y4Hack_bespontovy_pirozhok_game
 
             if (create == false)
             {
-                SixLevel gameSx = new SixLevel();
-                this.Hide();
-                gameSx.Show();
-            }
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-            bool create = false;
-
-            foreach (Form form in Application.OpenForms)
-            {
-                if (form.Name.ToString() == "threeLevel_form")
-                {
-                    this.Hide();
-                    form.Visible = true;
-                    create = true;
-                    break;
-                }
-            }
-
-            if (create == false)
-            {
-                SevenLevel gameS = new SevenLevel();
+                SixLevel gameS = new SixLevel();
                 this.Hide();
                 gameS.Show();
             }
         }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-            bool create = false;
-
-            foreach (Form form in Application.OpenForms)
-            {
-                if (form.Name.ToString() == "threeLevel_form")
-                {
-                    this.Hide();
-                    form.Visible = true;
-                    create = true;
-                    break;
-                }
-            }
-
-            if (create == false)
-            {
-                EightLevel gameE = new EightLevel();
-                this.Hide();
-                gameE.Show();
-            }
-        }
-        */
     }
-    }
+    
+}
+
+
 

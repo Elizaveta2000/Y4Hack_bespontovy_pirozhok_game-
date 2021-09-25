@@ -165,7 +165,9 @@ namespace Y4Hack_bespontovy_pirozhok_game
                 carrot5.Visible = true; // вернуть 5 морковь на поле
                 carrot6.Visible = true; // вернуть 6 морковь на поле                               
                 carrot7.Visible = true; // вернуть 7 морковь на поле 
-                carrot8.Visible = true; // вернуть 8 морковь на поле    example3.Visible = true; // открыть 3 пример
+                carrot8.Visible = true; // вернуть 8 морковь на поле
+                                        
+                example3.Visible = true; // открыть 3 пример
                 clickyes3.Visible = true; // появляем кнопка для 3-го примера
 
             }
@@ -270,7 +272,8 @@ namespace Y4Hack_bespontovy_pirozhok_game
         }
 
         private void clickyes5_Click(object sender, EventArgs e) // обработка кнопки "готово 5 пример", последний
-        {string num5 = "4";
+        {
+            string num5 = "4";
 
             if (score_carrot.Text == num5) // верный ответ
             {
@@ -301,13 +304,13 @@ namespace Y4Hack_bespontovy_pirozhok_game
 
         }
 
-        private void forward_Click(object sender, EventArgs e) // переход на 4 уровень
+        private void forward_Click(object sender, EventArgs e) // переход на 5 уровень
         { 
             bool create = false;
 
             foreach (Form form in Application.OpenForms)
             {
-                if (form.Name.ToString() == "fourLevel_form")
+                if (form.Name.ToString() == "FiveLevel_form")
                 {
                     this.Hide();
                     form.Visible = true;
@@ -318,9 +321,9 @@ namespace Y4Hack_bespontovy_pirozhok_game
 
             if (create == false)
             {
-                FourLevel gameF = new FourLevel();
+                FiveLevel gameFi = new FiveLevel();
                 this.Hide();
-                gameF.Show();
+                gameFi.Show();
             }
         }
 

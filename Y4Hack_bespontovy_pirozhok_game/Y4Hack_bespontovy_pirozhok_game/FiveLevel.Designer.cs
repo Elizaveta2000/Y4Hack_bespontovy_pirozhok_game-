@@ -1,7 +1,7 @@
 ﻿
 namespace Y4Hack_bespontovy_pirozhok_game
 {
-    partial class ThreeLevel
+    partial class FiveLevel
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThreeLevel));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FiveLevel));
             this.clickyes5 = new System.Windows.Forms.Label();
             this.clickyes4 = new System.Windows.Forms.Label();
             this.carrot7 = new System.Windows.Forms.Label();
@@ -54,6 +54,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.yes = new System.Windows.Forms.Label();
             this.fail = new System.Windows.Forms.Label();
             this.start = new System.Windows.Forms.Label();
+            this.carrot8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // clickyes5
@@ -63,10 +64,10 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.clickyes5.Location = new System.Drawing.Point(12, 533);
             this.clickyes5.Name = "clickyes5";
             this.clickyes5.Size = new System.Drawing.Size(128, 121);
-            this.clickyes5.TabIndex = 70;
+            this.clickyes5.TabIndex = 94;
             this.clickyes5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.clickyes5.Visible = false;
-            this.clickyes5.Click += new System.EventHandler(this.clickyes5_Click_1);
+            this.clickyes5.Click += new System.EventHandler(this.clickyes5_Click);
             // 
             // clickyes4
             // 
@@ -75,10 +76,10 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.clickyes4.Location = new System.Drawing.Point(12, 533);
             this.clickyes4.Name = "clickyes4";
             this.clickyes4.Size = new System.Drawing.Size(128, 121);
-            this.clickyes4.TabIndex = 69;
+            this.clickyes4.TabIndex = 93;
             this.clickyes4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.clickyes4.Visible = false;
-            this.clickyes4.Click += new System.EventHandler(this.clickyes4_Click_1);
+            this.clickyes4.Click += new System.EventHandler(this.clickyes4_Click);
             // 
             // carrot7
             // 
@@ -88,9 +89,9 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.carrot7.Location = new System.Drawing.Point(410, 229);
             this.carrot7.Name = "carrot7";
             this.carrot7.Size = new System.Drawing.Size(80, 121);
-            this.carrot7.TabIndex = 68;
+            this.carrot7.TabIndex = 92;
             this.carrot7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.carrot7.Click += new System.EventHandler(this.carrot7_Click_1);
+            this.carrot7.Click += new System.EventHandler(this.carrot7_Click);
             // 
             // clickyes3
             // 
@@ -99,10 +100,10 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.clickyes3.Location = new System.Drawing.Point(12, 533);
             this.clickyes3.Name = "clickyes3";
             this.clickyes3.Size = new System.Drawing.Size(128, 121);
-            this.clickyes3.TabIndex = 67;
+            this.clickyes3.TabIndex = 91;
             this.clickyes3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.clickyes3.Visible = false;
-            this.clickyes3.Click += new System.EventHandler(this.clickyes3_Click_1);
+            this.clickyes3.Click += new System.EventHandler(this.clickyes3_Click);
             // 
             // clickyes2
             // 
@@ -111,10 +112,10 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.clickyes2.Location = new System.Drawing.Point(12, 533);
             this.clickyes2.Name = "clickyes2";
             this.clickyes2.Size = new System.Drawing.Size(128, 121);
-            this.clickyes2.TabIndex = 66;
+            this.clickyes2.TabIndex = 90;
             this.clickyes2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.clickyes2.Visible = false;
-            this.clickyes2.Click += new System.EventHandler(this.clickyes2_Click_1);
+            this.clickyes2.Click += new System.EventHandler(this.clickyes2_Click);
             // 
             // example5
             // 
@@ -124,8 +125,8 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.example5.Location = new System.Drawing.Point(255, 36);
             this.example5.Name = "example5";
             this.example5.Size = new System.Drawing.Size(235, 83);
-            this.example5.TabIndex = 65;
-            this.example5.Text = "4-4";
+            this.example5.TabIndex = 89;
+            this.example5.Text = "8/8";
             this.example5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.example5.Visible = false;
             // 
@@ -137,8 +138,8 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.example4.Location = new System.Drawing.Point(255, 36);
             this.example4.Name = "example4";
             this.example4.Size = new System.Drawing.Size(235, 83);
-            this.example4.TabIndex = 64;
-            this.example4.Text = "10-5";
+            this.example4.TabIndex = 88;
+            this.example4.Text = "15/3";
             this.example4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.example4.Visible = false;
             // 
@@ -150,8 +151,8 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.example3.Location = new System.Drawing.Point(255, 36);
             this.example3.Name = "example3";
             this.example3.Size = new System.Drawing.Size(235, 83);
-            this.example3.TabIndex = 63;
-            this.example3.Text = "8-6";
+            this.example3.TabIndex = 87;
+            this.example3.Text = "8/2";
             this.example3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.example3.Visible = false;
             // 
@@ -163,8 +164,8 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.example2.Location = new System.Drawing.Point(255, 36);
             this.example2.Name = "example2";
             this.example2.Size = new System.Drawing.Size(235, 83);
-            this.example2.TabIndex = 62;
-            this.example2.Text = "7-4";
+            this.example2.TabIndex = 86;
+            this.example2.Text = "12/4";
             this.example2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.example2.Visible = false;
             // 
@@ -176,8 +177,8 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.example1.Location = new System.Drawing.Point(255, 36);
             this.example1.Name = "example1";
             this.example1.Size = new System.Drawing.Size(235, 83);
-            this.example1.TabIndex = 59;
-            this.example1.Text = "3-2";
+            this.example1.TabIndex = 83;
+            this.example1.Text = "6/3";
             this.example1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // carrot6
@@ -188,9 +189,9 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.carrot6.Location = new System.Drawing.Point(498, 422);
             this.carrot6.Name = "carrot6";
             this.carrot6.Size = new System.Drawing.Size(80, 121);
-            this.carrot6.TabIndex = 58;
+            this.carrot6.TabIndex = 82;
             this.carrot6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.carrot6.Click += new System.EventHandler(this.carrot6_Click_1);
+            this.carrot6.Click += new System.EventHandler(this.carrot6_Click);
             // 
             // carrot5
             // 
@@ -200,9 +201,9 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.carrot5.Location = new System.Drawing.Point(385, 350);
             this.carrot5.Name = "carrot5";
             this.carrot5.Size = new System.Drawing.Size(80, 121);
-            this.carrot5.TabIndex = 57;
+            this.carrot5.TabIndex = 81;
             this.carrot5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.carrot5.Click += new System.EventHandler(this.carrot5_Click_1);
+            this.carrot5.Click += new System.EventHandler(this.carrot5_Click);
             // 
             // forward
             // 
@@ -211,10 +212,10 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.forward.Location = new System.Drawing.Point(553, 543);
             this.forward.Name = "forward";
             this.forward.Size = new System.Drawing.Size(119, 100);
-            this.forward.TabIndex = 55;
+            this.forward.TabIndex = 79;
             this.forward.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.forward.Visible = false;
-            this.forward.Click += new System.EventHandler(this.forward_Click_1);
+            this.forward.Click += new System.EventHandler(this.forward_Click);
             // 
             // label2
             // 
@@ -223,7 +224,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.label2.Location = new System.Drawing.Point(12, 166);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(180, 116);
-            this.label2.TabIndex = 54;
+            this.label2.TabIndex = 78;
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // carrot4
@@ -234,9 +235,9 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.carrot4.Location = new System.Drawing.Point(516, 273);
             this.carrot4.Name = "carrot4";
             this.carrot4.Size = new System.Drawing.Size(80, 121);
-            this.carrot4.TabIndex = 53;
+            this.carrot4.TabIndex = 77;
             this.carrot4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.carrot4.Click += new System.EventHandler(this.carrot4_Click_1);
+            this.carrot4.Click += new System.EventHandler(this.carrot4_Click);
             // 
             // carrot3
             // 
@@ -245,9 +246,9 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.carrot3.Location = new System.Drawing.Point(255, 273);
             this.carrot3.Name = "carrot3";
             this.carrot3.Size = new System.Drawing.Size(80, 121);
-            this.carrot3.TabIndex = 52;
+            this.carrot3.TabIndex = 76;
             this.carrot3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.carrot3.Click += new System.EventHandler(this.carrot3_Click_1);
+            this.carrot3.Click += new System.EventHandler(this.carrot3_Click);
             // 
             // carrot2
             // 
@@ -256,9 +257,9 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.carrot2.Location = new System.Drawing.Point(170, 391);
             this.carrot2.Name = "carrot2";
             this.carrot2.Size = new System.Drawing.Size(79, 112);
-            this.carrot2.TabIndex = 51;
+            this.carrot2.TabIndex = 75;
             this.carrot2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.carrot2.Click += new System.EventHandler(this.carrot2_Click_1);
+            this.carrot2.Click += new System.EventHandler(this.carrot2_Click);
             // 
             // carrot1
             // 
@@ -267,9 +268,9 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.carrot1.Location = new System.Drawing.Point(28, 320);
             this.carrot1.Name = "carrot1";
             this.carrot1.Size = new System.Drawing.Size(80, 121);
-            this.carrot1.TabIndex = 50;
+            this.carrot1.TabIndex = 74;
             this.carrot1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.carrot1.Click += new System.EventHandler(this.carrot1_Click_1);
+            this.carrot1.Click += new System.EventHandler(this.carrot1_Click);
             // 
             // score_carrot
             // 
@@ -280,7 +281,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.score_carrot.Location = new System.Drawing.Point(507, 6);
             this.score_carrot.Name = "score_carrot";
             this.score_carrot.Size = new System.Drawing.Size(165, 134);
-            this.score_carrot.TabIndex = 49;
+            this.score_carrot.TabIndex = 73;
             this.score_carrot.Text = "0";
             this.score_carrot.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -291,9 +292,9 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.clickyes1.Location = new System.Drawing.Point(12, 533);
             this.clickyes1.Name = "clickyes1";
             this.clickyes1.Size = new System.Drawing.Size(128, 121);
-            this.clickyes1.TabIndex = 48;
+            this.clickyes1.TabIndex = 72;
             this.clickyes1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.clickyes1.Click += new System.EventHandler(this.clickyes1_Click_1);
+            this.clickyes1.Click += new System.EventHandler(this.clickyes1_Click);
             // 
             // exit
             // 
@@ -302,7 +303,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.exit.Location = new System.Drawing.Point(12, 6);
             this.exit.Name = "exit";
             this.exit.Size = new System.Drawing.Size(67, 64);
-            this.exit.TabIndex = 47;
+            this.exit.TabIndex = 71;
             this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
             // yes
@@ -314,7 +315,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.yes.Location = new System.Drawing.Point(82, 36);
             this.yes.Name = "yes";
             this.yes.Size = new System.Drawing.Size(190, 118);
-            this.yes.TabIndex = 61;
+            this.yes.TabIndex = 85;
             this.yes.Text = "Молодчинка!";
             this.yes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.yes.Visible = false;
@@ -328,7 +329,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.fail.Location = new System.Drawing.Point(82, 36);
             this.fail.Name = "fail";
             this.fail.Size = new System.Drawing.Size(190, 118);
-            this.fail.TabIndex = 60;
+            this.fail.TabIndex = 84;
             this.fail.Text = "Попробуй \r\nеще раз :)";
             this.fail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.fail.Visible = false;
@@ -342,16 +343,29 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.start.Location = new System.Drawing.Point(82, 36);
             this.start.Name = "start";
             this.start.Size = new System.Drawing.Size(190, 118);
-            this.start.TabIndex = 56;
+            this.start.TabIndex = 80;
             this.start.Text = "Давай \r\nпосчитаем!";
             this.start.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // ThreeLevel
+            // carrot8
+            // 
+            this.carrot8.BackColor = System.Drawing.Color.Transparent;
+            this.carrot8.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.carrot8.Image = ((System.Drawing.Image)(resources.GetObject("carrot8.Image")));
+            this.carrot8.Location = new System.Drawing.Point(296, 476);
+            this.carrot8.Name = "carrot8";
+            this.carrot8.Size = new System.Drawing.Size(80, 121);
+            this.carrot8.TabIndex = 95;
+            this.carrot8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.carrot8.Click += new System.EventHandler(this.carrot8_Click);
+            // 
+            // FiveLevel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(684, 661);
+            this.Controls.Add(this.carrot8);
             this.Controls.Add(this.clickyes5);
             this.Controls.Add(this.clickyes4);
             this.Controls.Add(this.carrot7);
@@ -376,8 +390,8 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.Controls.Add(this.yes);
             this.Controls.Add(this.fail);
             this.Controls.Add(this.start);
-            this.Name = "ThreeLevel";
-            this.Text = "ThreeLevel";
+            this.Name = "FiveLevel";
+            this.Text = "FiveLevel";
             this.ResumeLayout(false);
 
         }
@@ -408,5 +422,6 @@ namespace Y4Hack_bespontovy_pirozhok_game
         private System.Windows.Forms.Label yes;
         private System.Windows.Forms.Label fail;
         private System.Windows.Forms.Label start;
+        private System.Windows.Forms.Label carrot8;
     }
 }
