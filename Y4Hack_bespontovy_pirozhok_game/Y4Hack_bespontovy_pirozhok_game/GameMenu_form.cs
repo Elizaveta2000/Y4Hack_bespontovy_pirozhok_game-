@@ -90,7 +90,6 @@ namespace Y4Hack_bespontovy_pirozhok_game
             }
         }
 
-        /*
         private void label3_Click(object sender, EventArgs e)
         {
             bool create = false;
@@ -112,6 +111,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
                 this.Hide();
                 gameTh.Show();
             }
+
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -127,14 +127,27 @@ namespace Y4Hack_bespontovy_pirozhok_game
                     create = true;
                     break;
                 }
-            }
 
-            if (create == false)
-            {
-                FourLevel gameF = new FourLevel();
-                this.Hide();
-                gameF.Show();
+                if (create == false)
+                {
+                    FourLevel gameF = new FourLevel();
+                    this.Hide();
+                    gameF.Show();
+                }
+
             }
+        }
+
+        /*
+        private void label3_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            
+
         }
 
         private void label5_Click(object sender, EventArgs e)

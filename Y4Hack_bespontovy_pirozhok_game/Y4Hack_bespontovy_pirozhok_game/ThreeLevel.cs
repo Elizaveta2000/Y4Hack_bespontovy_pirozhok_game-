@@ -10,15 +10,116 @@ using System.Windows.Forms;
 
 namespace Y4Hack_bespontovy_pirozhok_game
 {
-    public partial class TwoLevel : Form
+    public partial class ThreeLevel : Form
     {
-        public TwoLevel()
+        public ThreeLevel()
         {
             InitializeComponent();
         }
+        private void clickyes5_Click_1(object sender, EventArgs e)// обработка кнопки "готово 5 пример", последний
+        {
+    
+            string num5 = "0";
 
-        private void TwoLevel_Load(object sender, EventArgs e) { }
+            if (score_carrot.Text == num5) // верный ответ
+            {
+                start.Visible = false; // убираем задание
+                fail.Visible = false; // закрыть комент с проигрышем, если такой был
 
+                yes.Visible = true; // показываем коммент выигрыша
+
+                forward.Visible = true; // появляем кнопка для перехода на новый уровень
+
+            }
+            else // не верный ответ
+            {
+                score_carrot.Text = "0"; // обнулим морковь
+                start.Visible = false; // уберем коммент привет
+                yes.Visible = false; // уберем коммент выигрыша
+                carrot1.Visible = true; // вернем морковь
+                carrot2.Visible = true; // вернем морковь
+                carrot3.Visible = true; // вернем морковь
+                carrot4.Visible = true; // вернем морковь
+                carrot5.Visible = true; // вернем морковь
+                carrot6.Visible = true; // вернем морковь
+                carrot7.Visible = true; // вернуть 7 морковь на поле 
+                fail.Visible = true; // покажем коммент с проигрышем
+            }
+        
+
+        }
+        private void forward_Click_1(object sender, EventArgs e) // переход на 4 уровень
+        {
+
+            bool create = false;
+
+            foreach (Form form in Application.OpenForms)
+            {
+                if (form.Name.ToString() == "fourLevel_form")
+                {
+                    this.Hide();
+                    form.Visible = true;
+                    create = true;
+                    break;
+                }
+            }
+
+            if (create == false)
+            {
+                FourLevel gameF = new FourLevel();
+                this.Hide();
+                gameF.Show();
+            }
+        }
+        private void carrot1_Click_1(object sender, EventArgs e)// вывод числа морковок на солнце для 1 морковки 
+        {
+            int i = Convert.ToInt32(score_carrot.Text);
+            i++;
+            score_carrot.Text = i.ToString();
+            carrot1.Visible = carrot1.Text != "";
+        }
+        private void carrot2_Click_1(object sender, EventArgs e)// вывод числа морковок на солнце для 2 морковки 
+        {
+            int i = Convert.ToInt32(score_carrot.Text);
+            i++;
+            score_carrot.Text = i.ToString();
+            carrot2.Visible = carrot2.Text != "";
+        }
+        private void carrot3_Click_1(object sender, EventArgs e)// вывод числа морковок на солнце для 3 морковки 
+        {
+            int i = Convert.ToInt32(score_carrot.Text);
+            i++;
+            score_carrot.Text = i.ToString();
+            carrot3.Visible = carrot3.Text != "";
+        }
+        private void carrot5_Click_1(object sender, EventArgs e)// вывод числа морковок на солнце для 5 морковки 
+        {
+            int i = Convert.ToInt32(score_carrot.Text);
+            i++;
+            score_carrot.Text = i.ToString();
+            carrot5.Visible = carrot5.Text != "";
+        }
+        private void carrot7_Click_1(object sender, EventArgs e)// вывод числа морковок на солнце для 7 морковки 
+        { 
+            int i = Convert.ToInt32(score_carrot.Text);
+            i++;
+            score_carrot.Text = i.ToString();
+            carrot7.Visible = carrot7.Text != "";
+        }
+        private void carrot6_Click_1(object sender, EventArgs e)// вывод числа морковок на солнце для 6 морковки 
+        {
+            int i = Convert.ToInt32(score_carrot.Text);
+            i++;
+            score_carrot.Text = i.ToString();
+            carrot6.Visible = carrot6.Text != "";
+        }
+        private void carrot4_Click_1(object sender, EventArgs e)// вывод числа морковок на солнце для 4 морковки 
+        {
+            int i = Convert.ToInt32(score_carrot.Text);
+            i++;
+            score_carrot.Text = i.ToString();
+            carrot4.Visible = carrot4.Text != "";
+        }
         private void exit_Click(object sender, EventArgs e) // выход в меню
         {
             bool create = false;
@@ -42,60 +143,10 @@ namespace Y4Hack_bespontovy_pirozhok_game
 
             }
         }
-
-        private void carrot1_Click(object sender, EventArgs e) // вывод числа морковок на солнце для 1 морковки 
+        private void clickyes1_Click_1(object sender, EventArgs e)// обработка кнопки "готово 1 пример"
         {
-            int i = Convert.ToInt32(score_carrot.Text);
-            i++;
-            score_carrot.Text = i.ToString();
-            carrot1.Visible = carrot1.Text != "";
-        }
-        private void carrot2_Click(object sender, EventArgs e) // вывод числа морковок на солнце для 2 морковки 
-        {
-            int i = Convert.ToInt32(score_carrot.Text);
-            i++;
-            score_carrot.Text = i.ToString();
-            carrot2.Visible = carrot2.Text != "";
-        }
-        private void carrot3_Click(object sender, EventArgs e) // вывод числа морковок на солнце для 3 морковки 
-        {
-            int i = Convert.ToInt32(score_carrot.Text);
-            i++;
-            score_carrot.Text = i.ToString();
-            carrot3.Visible = carrot3.Text != "";
-        }
-        private void carrot5_Click(object sender, EventArgs e) // вывод числа морковок на солнце для 5 морковки 
-        {
-            int i = Convert.ToInt32(score_carrot.Text);
-            i++;
-            score_carrot.Text = i.ToString();
-            carrot5.Visible = carrot5.Text != "";
-        }
-        private void carrot4_Click(object sender, EventArgs e) // вывод числа морковок на солнце для 4 морковки 
-        {
-            int i = Convert.ToInt32(score_carrot.Text);
-            i++;
-            score_carrot.Text = i.ToString();
-            carrot4.Visible = carrot4.Text != "";
-        }
-        private void carrot6_Click(object sender, EventArgs e) // вывод числа морковок на солнце для 6 морковки 
-        {
-            int i = Convert.ToInt32(score_carrot.Text);
-            i++;
-            score_carrot.Text = i.ToString();
-            carrot6.Visible = carrot6.Text != "";
-        }
-        private void carrot7_Click(object sender, EventArgs e) // вывод числа морковок на солнце для 7 морковки 
-        {
-            int i = Convert.ToInt32(score_carrot.Text);
-            i++;
-            score_carrot.Text = i.ToString();
-            carrot7.Visible = carrot7.Text != "";
-        }
-
-        private void clickyes1_Click(object sender, EventArgs e) // обработка кнопки "готово 1 пример"
-        {
-            string num1 = "3";
+     
+            string num1 = "1";
             if (score_carrot.Text == num1) // верный ответ
             {
                 start.Visible = false; // убираем задание
@@ -127,11 +178,14 @@ namespace Y4Hack_bespontovy_pirozhok_game
                 carrot6.Visible = true; // вернем морковь
                 fail.Visible = true; // покажем коммент с проигрышем
             }
+        
+
         }
-        private void clickyes2_Click(object sender, EventArgs e) // обработка кнопки "готово 2 пример"
+        private void clickyes2_Click_1(object sender, EventArgs e)// обработка кнопки "готово 2 пример"
         {
-            string num2 = "5";
-            
+      
+            string num2 = "3";
+
             if (score_carrot.Text == num2) // верный ответ
             {
                 start.Visible = false; // убираем задание
@@ -166,9 +220,10 @@ namespace Y4Hack_bespontovy_pirozhok_game
                 fail.Visible = true; // покажем коммент с проигрышем
             }
         }
-        private void clickyes3_Click(object sender, EventArgs e) // обработка кнопки "готово 3 пример"
+        private void clickyes3_Click_1(object sender, EventArgs e)// обработка кнопки "готово 3 пример"
         {
-            string num3 = "1";
+       
+            string num3 = "2";
 
             if (score_carrot.Text == num3) // верный ответ
             {
@@ -204,9 +259,10 @@ namespace Y4Hack_bespontovy_pirozhok_game
                 fail.Visible = true; // покажем коммент с проигрышем
             }
         }
-        private void clickyes4_Click(object sender, EventArgs e) // обработка кнопки "готово 4 пример"
+        private void clickyes4_Click_1(object sender, EventArgs e)// обработка кнопки "готово 4 пример"
         {
-            string num4 = "7";
+        
+            string num4 = "5";
 
             if (score_carrot.Text == num4) // верный ответ
             {
@@ -242,59 +298,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
                 fail.Visible = true; // покажем коммент с проигрышем
             }
         }
-        private void clickyes5_Click(object sender, EventArgs e) // обработка кнопки "готово 5 пример", последний
-        {
-            string num5 = "4";
 
-            if (score_carrot.Text == num5) // верный ответ
-            {
-                start.Visible = false; // убираем задание
-                fail.Visible = false; // закрыть комент с проигрышем, если такой был
-               
-                yes.Visible = true; // показываем коммент выигрыша
-
-                forward.Visible = true; // появляем кнопка для перехода на новый уровень
-
-            }
-            else // не верный ответ
-            {
-                score_carrot.Text = "0"; // обнулим морковь
-                start.Visible = false; // уберем коммент привет
-                yes.Visible = false; // уберем коммент выигрыша
-                carrot1.Visible = true; // вернем морковь
-                carrot2.Visible = true; // вернем морковь
-                carrot3.Visible = true; // вернем морковь
-                carrot4.Visible = true; // вернем морковь
-                carrot5.Visible = true; // вернем морковь
-                carrot6.Visible = true; // вернем морковь
-                carrot7.Visible = true; // вернуть 7 морковь на поле 
-                fail.Visible = true; // покажем коммент с проигрышем
-            }
-        }
-
-        private void forward_Click(object sender, EventArgs e) // переход на 3 уровень
-        {
-          
-            bool create = false;
-
-            foreach (Form form in Application.OpenForms)
-            {
-                if (form.Name.ToString() == "threeLevel_form")
-                {
-                    this.Hide();
-                    form.Visible = true;
-                    create = true;
-                    break;
-                }
-            }
-
-            if (create == false)
-            {
-                ThreeLevel gameTh = new ThreeLevel();
-                this.Hide();
-                gameTh.Show();
-            }
-          
-        }
+        
     }
 }
