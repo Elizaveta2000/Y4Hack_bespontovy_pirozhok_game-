@@ -35,6 +35,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.button3 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -104,12 +105,25 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.label2.Text = "The Bunny Calculates";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label3.Location = new System.Drawing.Point(430, 624);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(205, 15);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "bespontovy_pirozhok_games";
+            // 
             // Menu_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(684, 661);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -119,6 +133,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Menu_form_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -129,6 +144,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 

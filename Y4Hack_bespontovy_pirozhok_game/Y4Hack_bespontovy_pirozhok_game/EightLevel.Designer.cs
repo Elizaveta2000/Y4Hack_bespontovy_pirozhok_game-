@@ -164,7 +164,7 @@ namespace Y4Hack_bespontovy_pirozhok_game
             this.example3.Name = "example3";
             this.example3.Size = new System.Drawing.Size(235, 83);
             this.example3.TabIndex = 162;
-            this.example3.Text = "10*2-18";
+            this.example3.Text = "5*2-8";
             this.example3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.example3.Visible = false;
             // 
